@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Servicios" sideBarActiveItemID="Servicios">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Servicios</div>
+  </div>
+
+  <HorizontalCard
+    title="Desarrollo Web"
+    img="/desarrolloweb.svg"
+    desc="Mi objetivo es crear experiencias en línea excepcionales y funcionales para mis clientes. Me apasiona la creación de sitios web atractivos, intuitivos y receptivos que ayuden a las empresas y emprendedores a destacar en el mundo digital."
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Desarrollo Backend"
+    img="/backend.svg"
+    desc="Ofrezco servicios de desarrollo backend para crear APIs. Trabajo con lenguajes de programación como Node.js, Python, Ruby o Java, y utilizo frameworks populares como Express, Flask o Ruby on Rails para agilizar el proceso de desarrollo."
+    badge="Nuevo"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Consultoría en Tecnología y Programación"
+    img="/consultorias.svg"
+    desc="Tengo conocimientos valiosos, te puedo ofrecer servicios de consultoría para guiar a otras personas interesadas en aprender programación y tecnología, proporcionándote recursos, estrategias de aprendizaje y apoyo para tu crecimiento en este campo."
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Tutorías y Clases de Programación"
+    img="/tutorias.svg"
+    desc="Disfruto enseñar y compartir mis conocimientos, te puedo ofrecer tutorías personalizadas o clases grupales en temas relacionados con programación, desarrollo web, desarrollo backend."
+  />
+</BaseLayout>

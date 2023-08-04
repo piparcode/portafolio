@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title = "Comprar un café" sideBarActiveItemID="Comprar un café">
+
+    <div class="pb-12 mt-5">
+        <div class="text-2xl py-1 font-bold">Hola 👋</div>
+        <div class="py-2">
+        <text class="text-lg">
+            Me emociona mucho poder compartir mi conocimiento y pasión a través de este portafolio. Crear contenido significativo y útil es algo que disfruto enormemente.
+        </text>
+        </div>
+        <div class="py-2">
+            <text class="text-lg">
+            Si has encontrado valor en lo que hago y te gustaría apoyar mi trabajo, te doy las gracias de antemano. He habilitado esta opción de <b>"Comprar un Café"</b> como una forma simbólica de recibir tu apoyo. Cada pequeña contribución equivale a un café y me ayuda a mantener este espacio en línea, seguir creando contenido y mejorando mi trabajo.
+            </text>
+        </div>
+    </div>
+
+    <div>
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="hosted_button_id" value="RMXSTMHXSQBFU" />
+            <input class="btn btn-outline" type="submit" value="Comprar un Café" title="PayPal" alt="Donate with PayPal button" />
+        </form>            
+    </div>
+</BaseLayout>

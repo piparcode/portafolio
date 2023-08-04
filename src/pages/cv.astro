@@ -1,0 +1,88 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Hoja de vida" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Acerca de mi</div>
+  </div>
+
+  <div class="mb-4 text-justify">
+    ¡Hola! Soy Deiby Peña, un estudiante autodidacta apasionado por el mundo de la tecnología y el desarrollo de software. Mi viaje en el mundo de la informática comenzó cuando descubrí mi amor por las computadoras y su potencial para crear soluciones innovadoras. A diferencia de muchos estudiantes, mi camino hacia el conocimiento ha sido principalmente autodidacta. A lo largo de mi trayecto, he explorado diversas áreas, y una de mis mayores pasiones es la programación. Desde que di mis primeros pasos como desarrollador web, he disfrutado creando aplicaciones y sitios web atractivos y funcionales.
+  </div>
+
+  <div class="mb-10 text-justify">
+    Actualmente, me encuentro inmerso en el apasionante mundo del desarrollo backend, disfruto aprendiendo nuevas tecnologías y enfoques para mejorar mis habilidades en esta área.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Conmentibus - Nuestra comunidad</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    He decidido embarcarme en una misión para crear una comunidad llamada <b>"Conmentibus"</b>, el nombre proviene del latín y significa "con mentes" o "con conocimiento". En esta comunidad, nuestro objetivo es reunir apasionados para compartir conocimientos, ayudarnos mutuamente y fomentar un ambiente colaborativo. Creo firmemente que cada uno de nosotros tiene algo valioso que ofrecer y que juntos podemos lograr un impacto positivo en la sociedad.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Mi visión</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Mi visión es que Conmentibus se convierta en un espacio enriquecedor donde los miembros puedan acceder a recursos educativos, participar en proyectos conjuntos y participar en eventos y talleres que impulsen nuestro desarrollo profesional. Aspiro a crear una comunidad acogedora y diversa, donde cada uno se sienta valorado y empoderado para alcanzar sus objetivos.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Educación</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Instituto San Francisco de Asis"
+      subtitle="Primaria desde el 2007 al 2012 en Bucaramanga/Santander"
+    />
+    <TimeLineElement
+      title="Instituto San Francisco de Asis"
+      subtitle="Secundaria desde el 2013 al 2018 en Bucaramanga/Santander"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experiencias</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Gecins"
+      subtitle="2021"
+    >
+    </TimeLineElement>
+    <TimeLineElement
+      title="CienciaCo"
+      subtitle="2022"
+    >
+    </TimeLineElement>
+    <TimeLineElement
+      title="ejmovingllc"
+      subtitle="2022"
+    >
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Habilidades</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>PHP</li>
+    <li>Firebase</li>
+    <li>Astro</li>
+    <li>Taildwin</li>
+    <li>MySQL</li>
+    <li>Mongo DB</li>
+    <li>React</li>
+    <li>Otras</li>
+  </ul>
+</BaseLayout>

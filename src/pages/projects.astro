@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Proyectos" sideBarActiveItemID="Proyectos">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Proyectos</div>
+  </div>
+
+  <HorizontalCard
+    title="EJ Moving Services"
+    img="/ejmoving.png"
+    desc="Somos una empresa de mudanzas, estamos aquí para hacer que su transición sea perfecta y libre de estrés. Contamos con más de 10 años de experiencia y un equipo de profesionales"
+    url="https://ejmovingllc.com/"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="CienciaCo"
+    img="/cienciaco.webp"
+    desc="Somos una iniciativa que busca conectar investigadores, académicos, doctores y demás interesados en aportar a las ciencias de Colombia y el mundo."
+    url="https://cienciaco.com/"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Gecins"
+    img="/gecins.webp"
+    desc="Vocación científica de niños utilizando como herramientas el método científico y diferentes especies de mariposas provenientes del departamento."
+    url="https://gecins.com/"
+  />
+
+</BaseLayout>
